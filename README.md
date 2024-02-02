@@ -2,6 +2,8 @@
 
 The Celestial Object Creator is a Python tool designed to interact with the Crossmint Challenge API for creating and managing celestial objects in a virtual map. This tool automates the placement of various celestial entities, including Polyanets, Soloons, and comeths, according to specific rules and configurations provided by the challenge.
 
+![image](https://github.com/Nathaniel-Nirmal/Crossmint-Megaverse/assets/142919730/2a3cd7b9-d02e-45f7-a6f0-1ffecfd650bc)
+
 ## Features
 
 - **Automated Creation**: Easily create celestial objects on the map with specified positions and additional attributes.
