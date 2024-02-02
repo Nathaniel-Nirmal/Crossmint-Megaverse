@@ -1,6 +1,18 @@
 import requests
 import json
 
+
+class CelestialObjectCreator:
+    def __init__(self, candidate_id) -> None:
+        self.candidate_id = candidate_id
+
+    def create_polyanet(self, positions) -> None:
+        api_url = "https://challenge.crossmint.io/api/polyanets"
+        polyanet_data = [{"row": row, "column": col, "candidateId": self.candidate_id} for row, col in positions]
+        headers = {"Content-Type": "application/json"}
+        requests.post(api_url, data=json.dumps(polyanet_data), headers=headers)
+
+
 class MapProcessor:
     def __init__(self, candidate_id) -> None:
         self.candidate_id = candidate_id
